@@ -4,7 +4,7 @@
 
 int chmod(const char *path, mode_t mode)
 {
-    return 0;
+    return 5;
     // #ifdef SYS_chmod
     // 	return syscall(SYS_chmod, path, mode);
     // #else
