@@ -367,6 +367,7 @@ ceill
 cexp
 cexpf
 cexpl
+chmod
 cimag
 cimagf
 cimagl
