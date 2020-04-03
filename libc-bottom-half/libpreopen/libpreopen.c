@@ -591,35 +591,35 @@ software:
 
 int chmod(const char *pathname, mode_t mode)
 {
-    return 0;
+    return ENOSYS;
 }
 
 int fchmod(int fd, mode_t mode)
 {
-    return 0;
+    return ENOSYS;
 }
 
 int fchmodat(int dirfd, const char *pathname, mode_t mode, int flags)
 {
-    return 0;
+    return ENOSYS;
 }
 
 int chown(const char *pathname, uid_t owner, gid_t group)
 {
-    return 0;
+    return ENOSYS;
 }
 
 int fchown(int fd, uid_t owner, gid_t group)
 {
-    return 0;
+    return ENOSYS;
 }
 
 int lchown(const char *pathname, uid_t owner, gid_t group)
 {
-    return 0;
+    return ENOSYS;
 }
 
 int fchownat(int dirfd, const char *pathname, uid_t owner, gid_t group, int flags)
 {
-    return 0;
+    return ENOSYS;
 }
