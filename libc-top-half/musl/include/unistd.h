@@ -89,7 +89,7 @@ ssize_t write(int, const void *, size_t);
 ssize_t pread(int, void *, size_t, off_t);
 ssize_t pwrite(int, const void *, size_t, off_t);
 
-#ifdef __wasilibc_unmodified_upstream /* WASI has no chown */
+#if 1 /* WASI BLOCKHUNTERS */
 int chown(const char *, uid_t, gid_t);
 int fchown(int, uid_t, gid_t);
 int lchown(const char *, uid_t, gid_t);
@@ -128,7 +128,9 @@ char *getcwd(char *, size_t);
 unsigned alarm(unsigned);
 #endif
 unsigned sleep(unsigned);
+#ifdef __wasilibc_unmodified_upstream /* WASI has no pause */
 int pause(void);
+#endif
 
 #ifdef __wasilibc_unmodified_upstream /* WASI has no fork/exec */
 pid_t fork(void);
