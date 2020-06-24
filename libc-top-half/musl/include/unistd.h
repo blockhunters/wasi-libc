@@ -89,7 +89,7 @@ ssize_t write(int, const void *, size_t);
 ssize_t pread(int, void *, size_t, off_t);
 ssize_t pwrite(int, const void *, size_t, off_t);
 
-#if 1 /* WASI __BLOCKHUNTERS */
+#if 1 /* WASI BLOCKHUNTERS */
 int chown(const char *, uid_t, gid_t);
 int fchown(int, uid_t, gid_t);
 int lchown(const char *, uid_t, gid_t);

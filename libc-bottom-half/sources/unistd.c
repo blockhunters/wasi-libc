@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
+/* WASI BLOCKHUNTERS */
 
 int chown(const char *pathname, uid_t owner, gid_t group)
 {

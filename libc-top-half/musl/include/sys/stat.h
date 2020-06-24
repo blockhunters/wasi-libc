@@ -78,7 +78,7 @@ int stat(const char *__restrict, struct stat *__restrict);
 int fstat(int, struct stat *);
 int lstat(const char *__restrict, struct stat *__restrict);
 int fstatat(int, const char *__restrict, struct stat *__restrict, int);
-#if 1 /* WASI __BLOCKHUNTERS */
+#if 1 /* WASI BLOCKHUNTERS */
 int chmod(const char *, mode_t);
 int fchmod(int, mode_t);
 int fchmodat(int, const char *, mode_t, int);

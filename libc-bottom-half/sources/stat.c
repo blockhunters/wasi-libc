@@ -1,6 +1,8 @@
 #include <errno.h>
 #include <sys/stat.h>
 
+/* WASI BLOCKHUNTERS */
+
 int chmod(const char *pathname, mode_t mode)
 {
     return ENOSYS;
